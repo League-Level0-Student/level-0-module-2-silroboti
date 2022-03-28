@@ -4,6 +4,8 @@
 package _02_methods._1_animal_farm;
 
 import java.io.File;
+import java.util.Scanner;
+
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
@@ -24,6 +26,21 @@ public class AnimalFarm {
 	}
 	
 	void animals() {
+		
+		Scanner sc = new Scanner(System.in);
+		String input = sc.nextLine();
+		System.out.print("Enter a string: ");
+		if(input.equals("cow")) {
+			moo();
+		}else if (input.equals("duck")) {
+			quack();
+		}else if (input.equals("dog")) {
+			woof();
+		}else if (input.equals("cat")) {
+			meow();
+		}else if(input.equals("llama")){
+			llamaScream();
+		}
 
 		/* 1. Ask the user which animal they want, then see and hear 
 		 *    the animal they chose using one of the methods below.

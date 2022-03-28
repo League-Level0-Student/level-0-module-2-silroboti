@@ -15,6 +15,18 @@ public class Validation {
 		int randomNumber = randomMaker.nextInt(5);
 		
 		System.out.println(randomNumber);
+		
+		if (randomNumber == 0) {
+			JOptionPane.showMessageDialog(null, "You are smart");
+		} else if (randomNumber == 1) {
+			JOptionPane.showMessageDialog(null, "You are funny");
+		} else if (randomNumber == 2) {
+			JOptionPane.showMessageDialog(null, "You are confident");
+		} else if (randomNumber == 3) {
+			JOptionPane.showMessageDialog(null, "You are good looking");
+		} else {
+			JOptionPane.showMessageDialog(null, "You are kind");
+		}
 
 		// 1. Use each value of randomNumber to give the user a random compliment.
 
