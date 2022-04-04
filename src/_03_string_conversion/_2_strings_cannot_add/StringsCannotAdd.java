@@ -1,8 +1,21 @@
 package _03_string_conversion._2_strings_cannot_add;
 
+import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
 public class StringsCannotAdd {
+	public static void main(String[] args) {
+		String fourAsString = JOptionPane.showInputDialog("Enter the number 4");
+		String sixAsString = JOptionPane.showInputDialog("Enter the number 6");
+		JOptionPane.showMessageDialog(null, fourAsString + sixAsString);
+		String fiveAsString = JOptionPane.showInputDialog("Enter the number 5");
+		JOptionPane.showMessageDialog(null, fourAsString + fiveAsString + sixAsString);
+		int fourAsInt = Integer.parseInt(fourAsString);
+		int sixAsInt = Integer.parseInt(sixAsString);
+		JOptionPane.showMessageDialog(null, fourAsInt + sixAsInt);
+		int fiveAsInt = Integer.parseInt(fiveAsString);
+		JOptionPane.showMessageDialog(null, fourAsInt + fiveAsInt + sixAsInt);
 
 		// 1) Make a main method that includes all the steps below…. 
 		
@@ -34,4 +47,5 @@ public class StringsCannotAdd {
 			// 10) Print the addition of fourAsInt, sixAsInt, and fiveAsInt using JOptionPane 
 			
 			// Is your value now 15 instead of 465?
+}
 }
